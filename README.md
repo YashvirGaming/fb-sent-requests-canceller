@@ -25,7 +25,7 @@
 <ol>
   <li>Install the Tampermonkey extension for Chrome: <a href="https://chromewebstore.google.com/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo">https://chromewebstore.google.com/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo</a></li>
   <li>Go to <code>chrome://extensions</code>, open Tampermonkey &gt; Details and turn <strong>ON</strong> "Allow User Scripts" (required on newer Chrome versions)</li>
-  <li>Download the script: <strong>[PASTE YOUR DOWNLOAD LINK HERE]</strong></li>
+  <li><a href="https://github.com/YashvirGaming/fb-sent-requests-canceller/blob/main/fb-cancel-sent-requests.user.js" target="_blank">Download</a> the script</li>
   <li>Open Tampermonkey &gt; Dashboard and drag the <code>.user.js</code> file in (or create a new script and paste the code), then save</li>
   <li>Go to <a href="https://facebook.com">facebook.com/friends/requests</a> and press <strong>F5</strong> to reload</li>
   <li>Click "Open list", then click "Start"</li>
