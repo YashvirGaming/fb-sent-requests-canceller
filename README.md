@@ -1,5 +1,7 @@
 <h1>How to Cancel ALL Sent Friend Requests on Facebook at Once (Free Tampermonkey Script 2026)</h1>
 
+<img width="937" height="601" alt="image" src="https://github.com/user-attachments/assets/c7898dd9-597c-45b3-a813-67c668a240eb" />
+
 <p>Have hundreds or even thousands of pending friend requests on Facebook? Cancelling them one by one takes forever. This free script cancels <strong>ALL</strong> your sent friend requests automatically, with safe randomized delays so you don't get throttled or blocked.</p>
 
 <h2>✅ FEATURES</h2>
