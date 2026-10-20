@@ -1,72 +1,112 @@
-# fb-sent-requests-canceller
-# How to Cancel ALL Sent Friend Requests on Facebook at Once (Free Tampermonkey Script 2026)
+<h1>How to Cancel ALL Sent Friend Requests on Facebook at Once (Free Tampermonkey Script 2026)</h1>
 
-Have hundreds or even thousands of pending friend requests on Facebook? Cancelling them one by one takes forever. This free script cancels ALL your sent friend requests automatically, with safe randomized delays so you don't get throttled or blocked.
+<p>Have hundreds or even thousands of pending friend requests on Facebook? Cancelling them one by one takes forever. This free script cancels <strong>ALL</strong> your sent friend requests automatically, with safe randomized delays so you don't get throttled or blocked.</p>
 
-✅ FEATURES
-• Cancel all sent friend requests automatically (tested with 986 pending requests)
-• One-click "Open list" button that opens your Sent Requests for you
-• Randomized delays between each cancel so it looks natural
-• Smart batch pauses every X requests to protect your account
-• Auto-stop if Facebook shows a warning or temporary block
-• Auto-stop after repeated failures
-• "Stop after" limit to cancel only a set number of requests
-• Live counter: cancelled, failed and elapsed time
-• Live activity log so you can watch every action
-• Fully adjustable settings, saved between sessions
-• Draggable and minimizable control panel
-• Works with English, French and Spanish Facebook
-• No password, no login, no data sent anywhere. It runs only in your own browser.
+<h2>✅ FEATURES</h2>
+<ul>
+  <li>Cancel all sent friend requests automatically (tested with 986 pending requests)</li>
+  <li>One-click "Open list" button that opens your Sent Requests for you</li>
+  <li>Randomized delays between each cancel so it looks natural</li>
+  <li>Smart batch pauses every X requests to protect your account</li>
+  <li>Auto-stop if Facebook shows a warning or temporary block</li>
+  <li>Auto-stop after repeated failures</li>
+  <li>"Stop after" limit to cancel only a set number of requests</li>
+  <li>Live counter: cancelled, failed and elapsed time</li>
+  <li>Live activity log so you can watch every action</li>
+  <li>Fully adjustable settings, saved between sessions</li>
+  <li>Draggable and minimizable control panel</li>
+  <li>Works with English, French and Spanish Facebook</li>
+  <li>No password, no login, no data sent anywhere. It runs only in your own browser.</li>
+</ul>
 
-⚙️ HOW TO INSTALL
-1. Install the Tampermonkey extension for Chrome:
-https://chromewebstore.google.com/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo
-2. Go to chrome://extensions, open Tampermonkey > Details and turn ON "Allow User Scripts" (required on newer Chrome versions)
-3. Download the script: [PASTE YOUR DOWNLOAD LINK HERE]
-4. Open Tampermonkey > Dashboard and drag the .user.js file in (or create a new script and paste the code), then save
-5. Go to facebook.com/friends/requests and press F5 to reload
-6. Click "Open list", then click "Start"
+<h2>⚙️ HOW TO INSTALL</h2>
+<ol>
+  <li>Install the Tampermonkey extension for Chrome: <a href="https://chromewebstore.google.com/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo">https://chromewebstore.google.com/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo</a></li>
+  <li>Go to <code>chrome://extensions</code>, open Tampermonkey &gt; Details and turn <strong>ON</strong> "Allow User Scripts" (required on newer Chrome versions)</li>
+  <li>Download the script: <strong>[PASTE YOUR DOWNLOAD LINK HERE]</strong></li>
+  <li>Open Tampermonkey &gt; Dashboard and drag the <code>.user.js</code> file in (or create a new script and paste the code), then save</li>
+  <li>Go to <a href="https://facebook.com">facebook.com/friends/requests</a> and press <strong>F5</strong> to reload</li>
+  <li>Click "Open list", then click "Start"</li>
+</ol>
 
-🟢 LOW RISK SETTINGS (Recommended)
-MIN DELAY: 3
-MAX DELAY: 6
-BATCH SIZE: 50
-STOP AFTER (0 = ALL): 0
-BATCH PAUSE MIN (S): 45
-BATCH PAUSE MAX (S): 90
-Est. time for 1000 requests: ~2h
+<h2>📊 RISK SETTINGS CONFIGURATION</h2>
+<table>
+  <thead>
+    <tr>
+      <th>Setting</th>
+      <th>🟢 LOW RISK (Recommended)</th>
+      <th>🟡 MEDIUM RISK</th>
+      <th>🔴 HIGH RISK</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>MIN DELAY</strong></td>
+      <td>3</td>
+      <td>2</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><strong>MAX DELAY</strong></td>
+      <td>6</td>
+      <td>4</td>
+      <td>2.5</td>
+    </tr>
+    <tr>
+      <td><strong>BATCH SIZE</strong></td>
+      <td>50</td>
+      <td>40</td>
+      <td>30</td>
+    </tr>
+    <tr>
+      <td><strong>STOP AFTER (0 = ALL)</strong></td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td><strong>BATCH PAUSE MIN (S)</strong></td>
+      <td>45</td>
+      <td>45</td>
+      <td>45</td>
+    </tr>
+    <tr>
+      <td><strong>BATCH PAUSE MAX (S)</strong></td>
+      <td>90</td>
+      <td>90</td>
+      <td>90</td>
+    </tr>
+    <tr>
+      <td><strong>Est. time for 1000 requests</strong></td>
+      <td>~2h</td>
+      <td>~1h 45m</td>
+      <td>~1h 30m</td>
+    </tr>
+  </tbody>
+</table>
 
-🟡 MEDIUM RISK SETTINGS
-MIN DELAY: 2
-MAX DELAY: 4
-BATCH SIZE: 40
-STOP AFTER (0 = ALL): 0
-BATCH PAUSE MIN (S): 45
-BATCH PAUSE MAX (S): 90
-Est. time for 1000 requests: ~1h 45m
+<p>Start with <strong>LOW</strong> and watch the log. If Facebook shows a warning, the script stops itself. Wait a few hours, then try again with slower settings. Times are rough estimates. Each click also takes a few seconds of overhead beyond the delay you set.</p>
 
-🔴 HIGH RISK SETTINGS
-MIN DELAY: 1
-MAX DELAY: 2.5
-BATCH SIZE: 30
-STOP AFTER (0 = ALL): 0
-BATCH PAUSE MIN (S): 45
-BATCH PAUSE MAX (S): 90
-Est. time for 1000 requests: ~1h 30m
+<h2>❓ FAQ</h2>
+<p><strong>Is it free?</strong><br>
+Yes, 100% free.</p>
 
-Start with LOW and watch the log. If Facebook shows a warning, the script stops itself. Wait a few hours, then try again with slower settings.
+<p><strong>Does it work on a mobile phone?</strong><br>
+No, it needs a desktop browser (Chrome, Edge, Brave) with Tampermonkey.</p>
 
-Times are rough estimates. Each click also takes a few seconds of overhead beyond the delay you set.
+<p><strong>Can I pause it?</strong><br>
+Yes, press Stop at any time and Start again later. Requests already cancelled stay cancelled.</p>
 
-❓ FAQ
-Is it free? Yes, 100% free.
-Does it work on a mobile phone? No, it needs a desktop browser (Chrome, Edge, Brave) with Tampermonkey.
-Can I pause it? Yes, press Stop at any time and Start again later. Requests already cancelled stay cancelled.
-Will my account get banned? Using slower settings keeps the risk low, but any automation carries some risk. Use it at your own responsibility.
+<p><strong>Will my account get banned?</strong><br>
+Using slower settings keeps the risk low, but any automation carries some risk. Use it at your own responsibility.</p>
 
-⚠️ DISCLAIMER
-This script is not affiliated with, endorsed by or connected to Meta or Facebook. Use at your own risk. Facebook can change its layout at any time, which may require a script update.
+<h2>⚠️ DISCLAIMER</h2>
+<p><em>This script is not affiliated with, endorsed by or connected to Meta or Facebook. Use at your own risk. Facebook can change its layout at any time, which may require a script update.</em></p>
 
-👍 If this helped you, like the video, subscribe for more free tools and drop a comment if you need help!
+<hr>
 
-#Facebook #Tampermonkey #FacebookTips #CancelFriendRequests #FacebookFriendRequests #UserScript #ChromeExtension #FacebookTricks #Automation #YashvirGaming
+<p>👍 If this helped you, like the video, subscribe for more free tools and drop a comment if you need help!</p>
+
+<p>
+  <code>#Facebook</code> <code>#Tampermonkey</code> <code>#FacebookTips</code> <code>#CancelFriendRequests</code> <code>#FacebookFriendRequests</code> <code>#UserScript</code> <code>#ChromeExtension</code> <code>#FacebookTricks</code> <code>#Automation</code> <code>#YashvirGaming</code>
+</p>
